@@ -28,7 +28,7 @@ test:
 	${SUDO} modinfo ${NAME}.ko
 	-@ 2>/dev/null ${SUDO} rmmod ${NAME}.ko || true
 	${SUDO} insmod ${NAME}.ko
-	${SUDO} cat /proc/${PROCFILE_NAME} | grep executed
+	${SUDO} cat /proc/${PROCFILE_NAME} ; ls /proc/${PROCFILE_NAME}
 	${SUDO} rmmod ${NAME}.ko
 
 deb: dkms.conf
