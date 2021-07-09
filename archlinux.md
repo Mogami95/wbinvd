@@ -6,7 +6,7 @@ For archlinux run this command: `sudo pacman -S base-devel`
 You may also skip this step if you already have them installed.
 
 ### 2. Package [linux-headers](https://archlinux.org/packages/core/x86_64/linux-headers/) on archlinux
-Use `uname -r` to check your current kernel version.  
+Use `uname -a` and `pacman -Qe | grep linux-headers` to check your current kernel version and linux-header version respectively.  
 If you are running on an old kerbel version, an [archived linux-headers](https://archive.archlinux.org/packages/l/linux-headers/) should be downloaded and installed.  
 Then install the matched linux-headers manually via `pacman -U /path/to/package`  
 
