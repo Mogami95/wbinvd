@@ -2,7 +2,7 @@
 
 ### 1. build-essential on archlinux
 The package build-essential is a set of packages that you need in order the compile software in Ubuntu or Debian.  
-For archlinux run this command: `sudo pacman -Sy base-devel`  
+For archlinux run this command: `sudo pacman -S base-devel`  
 You may also skip this step if you already have them installed.
 
 ### 2. Package [linux-headers](https://archlinux.org/packages/core/x86_64/linux-headers/) on archlinux
